@@ -1,0 +1,7 @@
+<suite name="Independent test Suite" >
+  <test name="Independent test">
+    <classes>
+     <class name="TestNG.IndependentTest" />
+    </classes>
+  </test>
+</suite>

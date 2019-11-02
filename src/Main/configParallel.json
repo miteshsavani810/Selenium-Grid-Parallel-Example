@@ -1,0 +1,16 @@
+{ 
+ "config":[
+		{
+			"browserName": "chrome",
+			"parallelType": "method",
+			"instance": "2",
+			"packageName": "testCases.*"
+		},
+		{
+			"browserName": "firefox",
+			"parallelType": "classes",
+			"instance": "2",
+			"packageName": "testCases.*"
+		}
+]
+}
