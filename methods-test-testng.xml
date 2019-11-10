@@ -1,15 +1,8 @@
-<suite name="Test-method Suite" parallel="methods" thread-count="2" >
-  <test name="Test-method test" group-by-instances="true">
+<suite name="Test-method Suite" parallel="methods" thread-count="2" > 
+  <test name="Test-method test2" group-by-instances="true">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.tests.test1" />
-    </classes>
-  </test>
-  
-  <test name="Test-method test2" group-by-instances="true">
-  <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="testCases.tests.test1" />
+      <class name="testCases.test1" />
     </classes>
   </test>
 </suite>
