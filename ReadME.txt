@@ -1,13 +1,13 @@
 How parallelism work in Selenium
 
-There is two type of parallelism 
-    - Class vise
-    - Method vise
+There are two type of parallelism 
+    - Class wise
+    - Method wise
     
 What code need to change to achive parallelism
 
  1. We need to create one HASHMAP object (e.g. <threadID, WebDriver> ) to store webdriver object of each parallel thread.
- 2. We need to create object of new webDriver if it is not created for current thread either at BeforeClass and BeforeMethod 
+ 2. We need to create object of new webDriver if it was not created for current thread either at BeforeClass and BeforeMethod 
  	and put it into HASHMAP object.
  3. At test case level, We can access webdriver from HASHMAP by giving thread Id.
  4. We have to create a Parent class where we have to define HASHMAP object as Public static and BeforeClass, BeforeMethod functions and in
